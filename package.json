@@ -1,0 +1,39 @@
+{
+  "name": "ts-locale",
+  "version": "0.0.1",
+  "description": "TypeScript strong typed localization wrapper library",
+  "main": "dist/",
+  "repository": {
+    "type": "git",
+    "utl": "https://github.com/amadare42/ts-locale.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "Amadare42<amadare42@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "factory",
+    "typescript",
+    "localization",
+    "i18n",
+    "locale"
+  ],
+  "scripts": {
+    "build": "npm run generate-code && webpack",
+    "hygen": "hygen",
+    "generate-code": "cross-env HYGEN_OVERWRITE=1 hygen types new sections"
+  },
+  "dependencies": { },
+  "devDependencies": {
+    "@types/webpack": "^4.41.21",
+    "cross-env": "^7.0.2",
+    "hygen": "^6.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6",
+    "ts-loader": "^8.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
